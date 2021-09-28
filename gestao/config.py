@@ -1,0 +1,6 @@
+customhost = "gestao.ckdbsxypndwc.us-east-2.rds.amazonaws.com"
+customuser = "admin"
+custompass = "12345678"
+customdb = "gestao"
+custombucket = "addempresa"
+customregion = "us-east-2"
