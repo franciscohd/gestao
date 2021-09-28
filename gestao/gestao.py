@@ -28,7 +28,7 @@ def home():
 
 
 @app.route("/registo", methods=['GET', 'POST'])
-def home():
+def registo():
     return render_template('registo.html')
 
 
