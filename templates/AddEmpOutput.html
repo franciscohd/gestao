@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-<center>
-	<font color="DodgerBlue" size="5" style="font-family: avenir">
-		<body bgcolor="lightgrey">
-			<h1>Sucesso</h1><br>
-			<h2>O funcionário seguinte foi adicionado com sucesso!!</h2><br>
-			<h2>{{ Nome}}</h2><br>
-			<title>Add Emp Output</title>
-				<form action="../index.html" autocomplete="on" method = "GET">
+	<head>
+		<title>Projeto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css')}}" />
+	</head>
+	
+	<center>
 
-					<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+		<body>
+			<div id="page-wrapper">
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
 
-				</form>
-		</body>
-	</font>
-</center>
-</head>
-<body>
+								<!-- Logo -->
+									<h1><a href="/" id="logo">Gestão Empresarial</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="/">Homepage</a>
+										<a href="/registo">Registo</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+					
+				</section>
+			</div>
+			<center>
+				<font color="DodgerBlue" size="5" style="font-family: avenir">
+					<h1>Sucesso</h1><br>
+					<h2>O funcionário seguinte foi adicionado com sucesso!!</h2><br>
+					<h2>{{ Nome}}</h2><br>
+					<form action="/" autocomplete="on" method = "GET">
+						<button type="submit" class ="button-large">Voltar</button><br><br>
+					</form>
+				</font>
+			</center>
+
+
 
 </body>
 </html>
