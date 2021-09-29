@@ -37,21 +37,21 @@
 						<form action="/addfuncionario" autocomplete="on" method = "POST" enctype="multipart/form-data">
 
 
-							Primeiro Nome:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="nome_funcionario" autofocus size="20" ><br>
+							Primeiro Nome:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="nome_funcionario" autofocus size="20" required><br><br>
 
-							Último Nome:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="sobrenome_funcionario"><br>
+							Último Nome:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="sobrenome_funcionario" required><br><br>
 
-							Função:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="funcao"><br>
+							Função:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="funcao" required><br><br>
 							
-							Morada:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="morada"><br>
+							Morada:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="morada" required><br><br>
 							
-							Email:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="email"><br>
+							Email:<br> <input style="height:25px;font-size:14pt;color:grey;" type="email" name="email" required><br><br>
 							
 			
-							Género:<br> <input style="height:15px;width:15px;font-size:14pt;color:grey;" type="radio" name="genero" value="M"> Masculino    
-										<input style="height:15px;width:15px;font-size:14pt;color:grey;" type="radio" name="genero" value="F"> Feminino<br>
+							Género:<br> <input style="height:15px;width:15px;font-size:14pt;color:grey;" type="radio" name="genero" value="M" required> Masculino    
+								<input style="height:15px;width:15px;font-size:14pt;color:grey;" type="radio" name="genero" value="F"> Feminino<br><br>
 
-							Image: <input type=file name="foto" style="height:25px;font-size:14pt;color:grey;"> <br><br>
+							Image: <input type=file name="foto" style="height:25px;font-size:14pt;color:grey;" required> <br><br>
 
 							<button type="submit" class ="button-large">Adicionar Funcionário</button>
 
