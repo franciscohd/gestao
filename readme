@@ -1,0 +1,16 @@
+sudo apt-get update
+# Para o cliente sql
+sudo apt-get install mysql-client
+
+# Para o python e frameworks relacionadas
+
+sudo apt-get install python3
+sudo apt-get install python3-flask
+sudo apt-get install python3-pymysql
+sudo apt-get install python3-boto3
+
+# Para correr a aplicação
+sudo python3 Empapp.py
+
+# Mudar para a janela onde está a correr a aplicação
+tmux a -t mywindow
