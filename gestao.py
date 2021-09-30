@@ -10,14 +10,18 @@ app = Flask(__name__)
 bucket = custombucket
 region = customregion
 
-db_conn = connections.Connection(
-    host=customhost,
-    port=3306,
-    user=customuser,
-    password=custompass,
-    db=customdb
+db_conn = NULL
+def connect():
+    conn = connections.Connection(
+        host=customhost,
+        port=3306,
+        user=customuser,
+        password=custompass,
+        db=customdb
 
-)
+    )
+    return conn
+
 output = {}
 table = 'funcionarios'
 
@@ -35,6 +39,7 @@ def registo():
 
 @app.route("/addfuncionario", methods=['POST'])
 def AddFuncionario():
+    db_conn = connect()
     nome_funcionario = request.form['nome_funcionario']
     sobrenome_funcionario = request.form['sobrenome_funcionario']
     funcao = request.form['funcao']
