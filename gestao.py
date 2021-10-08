@@ -10,7 +10,7 @@ app = Flask(__name__)
 bucket = custombucket
 region = customregion
 
-db_conn = NULL
+db_conn = None
 def connect():
     conn = connections.Connection(
         host=customhost,
